@@ -135,6 +135,7 @@
 				801E603221C3EA0800935339 /* Sources */,
 				801E603321C3EA0800935339 /* Frameworks */,
 				801E603421C3EA0800935339 /* Resources */,
+				801E606721C3EB2D00935339 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -250,6 +251,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		801E606721C3EB2D00935339 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/swiftlint-output.log",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./scripts/swiftlint.sh\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		801E603221C3EA0800935339 /* Sources */ = {
