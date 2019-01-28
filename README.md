@@ -1,7 +1,7 @@
-# Kuzzle.io Test
+# My Boilerplate
 ------------
 
-Make an app to test the broker of Kuzzle
+Make a default app to create a project with a best practice and a Kuzzle connector
 
    
    
