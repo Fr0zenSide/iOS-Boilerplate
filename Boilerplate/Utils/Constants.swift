@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import KeychainAccess
 
 class Constants {
     // MARK: - Variables
@@ -15,7 +16,11 @@ class Constants {
     // Public variables
     
     // todo: Need to add an external lib to protect this kind of data and to import it from a file ignored by git in gitignore with template
-    static var apptweakToken = ""
+    static var apptweakToken: String {
+        let keychain = Keychain(service: "me.jeoffrey.boilerplate")
+        if let token = keychain["apptweakToken"] { return token }
+        return ""
+    }
     static var locale = "fr"
     static var country = "fr"
     

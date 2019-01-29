@@ -83,3 +83,6 @@ fastlane/test_output
 
 *.diff
 *.patch
+
+# Firebase Keys
+*/GoogleService-Info.plist

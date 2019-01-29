@@ -54,6 +54,9 @@ target 'Boilerplate' do
 
   ############# About Tools - Debug - CI #############
   #
+  # KeychainAccess is a simple Swift wrapper for Keychain that works on iOS and OS X.
+  pod 'KeychainAccess', '~> 3.1.2'
+
   # A fast & simple, yet powerful & flexible logging framework for Mac and iOS.
   pod 'CocoaLumberjack', '~> 3.4.2'
 

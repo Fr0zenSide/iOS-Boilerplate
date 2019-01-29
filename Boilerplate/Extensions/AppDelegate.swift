@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import KeychainAccess
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,8 +19,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
+        // Setup Keychain
+        let keychain = Keychain(service: "me.jeoffrey.boilerplate")
+            .label("jeoffrey.me (Boilerplate)")
+            .synchronizable(true)
+        
         // Setup Firebase
         FirebaseApp.configure()
+        
+        // Setup api Tokens in keychain
+        let apptweakToken = ""
+        if apptweakToken == "" && (keychain["apptweakToken"] == nil || keychain["apptweakToken"] == "") {
+            fatalError("Error! You need to add a tweak token for this app worked")
+        } else if apptweakToken != "" {
+            keychain["apptweakToken"] = apptweakToken
+        }
+        if let token = keychain["apptweakToken"] { print("My app tweek token: \(token)") }
         
         return true
     }
