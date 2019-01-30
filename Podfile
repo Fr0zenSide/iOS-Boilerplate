@@ -17,13 +17,13 @@ target 'Boilerplate' do
   pod 'RxCocoa', '~> 4.4.0'
 
   # RxFlow is a navigation framework for iOS applications, based on a Reactive Coordinator pattern.
-  pod 'RxFlow', '~> 1.6.1'
+  pod 'RxFlow', '~> 1.6.2'
 
   
   ############# About Network #############
   #
   # Network abstraction layer written in Swift
-  pod 'Moya/RxSwift', '~> 12.0.0-beta.1'
+  pod 'Moya/RxSwift', '~> 12.0.1'
 
   # A conforming WebSocket RFC 6455 client library in Swift.
   pod 'Starscream', '~> 3.0.6'
@@ -58,7 +58,7 @@ target 'Boilerplate' do
   pod 'KeychainAccess', '~> 3.1.2'
 
   # A fast & simple, yet powerful & flexible logging framework for Mac and iOS.
-  pod 'CocoaLumberjack', '~> 3.4.2'
+  pod 'CocoaLumberjack/Swift', '~> 3.5.0'
 
   # Firebase for iOS
   pod 'Firebase/Core', '~> 5.15.0'

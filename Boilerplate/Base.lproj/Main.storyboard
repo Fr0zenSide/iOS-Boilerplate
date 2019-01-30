@@ -29,7 +29,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="KuzzleSocket" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Boilerplate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -62,7 +62,7 @@
         <!--Room View Controller-->
         <scene sceneID="A4D-Ok-Usx">
             <objects>
-                <viewController storyboardIdentifier="roomVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="j1a-pA-bvC" customClass="RoomViewController" customModule="KuzzleSocket" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="roomVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="j1a-pA-bvC" customClass="RoomViewController" customModule="Boilerplate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6ti-y3-Zx1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -77,7 +77,7 @@
         <!--Second View Controller-->
         <scene sceneID="O7u-HE-qDi">
             <objects>
-                <viewController storyboardIdentifier="secondVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="iYI-ob-Wna" customClass="SecondViewController" customModule="KuzzleSocket" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="secondVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="iYI-ob-Wna" customClass="SecondViewController" customModule="Boilerplate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DdG-2q-XH9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -114,7 +114,7 @@
         <!--Today View Controller-->
         <scene sceneID="0Kx-mZ-SE6">
             <objects>
-                <viewController storyboardIdentifier="todayVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0s8-Ih-ghn" customClass="TodayViewController" customModule="KuzzleSocket" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="todayVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0s8-Ih-ghn" customClass="TodayViewController" customModule="Boilerplate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jR7-TU-LZV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -137,7 +137,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </view>
                                     </collectionViewCell>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="customAppPreviewCell" id="c68-to-nfl" customClass="AppPreviewCollectionViewCell" customModule="Voodoo_store" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="customAppPreviewCell" id="c68-to-nfl" customClass="AppPreviewCollectionViewCell" customModule="Boilerplate" customModuleProvider="target">
                                         <rect key="frame" x="195" y="10" width="170" height="170"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -220,7 +220,7 @@
         <!--Detail Today App View Controller-->
         <scene sceneID="IS2-1N-vTh">
             <objects>
-                <viewController storyboardIdentifier="detailTodayAppVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="CWP-4x-vik" customClass="DetailTodayAppViewController" customModule="KuzzleSocket" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="detailTodayAppVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="CWP-4x-vik" customClass="DetailTodayAppViewController" customModule="Boilerplate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5JU-G9-JKE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

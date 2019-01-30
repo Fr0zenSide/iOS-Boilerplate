@@ -1,11 +1,8 @@
 PODS:
   - Alamofire (4.8.1)
-  - CocoaLumberjack (3.4.2):
-    - CocoaLumberjack/Default (= 3.4.2)
-    - CocoaLumberjack/Extensions (= 3.4.2)
-  - CocoaLumberjack/Default (3.4.2)
-  - CocoaLumberjack/Extensions (3.4.2):
-    - CocoaLumberjack/Default
+  - CocoaLumberjack/Core (3.5.0)
+  - CocoaLumberjack/Swift (3.5.0):
+    - CocoaLumberjack/Core
   - Crashlytics (3.12.0):
     - Fabric (~> 1.9.0)
   - Fabric (1.9.0)
@@ -87,18 +84,18 @@ PODS:
   - Starscream (3.0.6)
 
 DEPENDENCIES:
-  - CocoaLumberjack (~> 3.4.2)
+  - CocoaLumberjack/Swift (~> 3.5.0)
   - Crashlytics (~> 3.12.0)
   - Fabric (~> 1.9.0)
   - Firebase/Core (~> 5.15.0)
   - FontAwesome.swift (~> 1.4.5)
   - KeychainAccess (~> 3.1.2)
   - Kingfisher (~> 4.10.1)
-  - Moya/RxSwift (~> 12.0.0-beta.1)
+  - Moya/RxSwift (~> 12.0.1)
   - NVActivityIndicatorView (~> 4.4.1)
   - PMAlertController (~> 3.5.0)
   - RxCocoa (~> 4.4.0)
-  - RxFlow (~> 1.6.1)
+  - RxFlow (~> 1.6.2)
   - RxStarscream (~> 0.9)
   - RxSwift (~> 4.4.0)
   - Starscream (~> 3.0.6)
@@ -132,7 +129,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
-  CocoaLumberjack: db7cc9e464771f12054c22ff6947c5a58d43a0fd
+  CocoaLumberjack: cffaa70a9336515228178e3669b71bd49d343850
   Crashlytics: 07fb167b1694128c1c9a5a5cc319b0e9c3ca0933
   Fabric: f988e33c97f08930a413e08123064d2e5f68d655
   Firebase: 8bb9268bff82374f2cbaaabb143e725743c316ae
@@ -156,6 +153,6 @@ SPEC CHECKSUMS:
   RxSwift: 5976ecd04fc2fefd648827c23de5e11157faa973
   Starscream: ef3ece99d765eeccb67de105bfa143f929026cf5
 
-PODFILE CHECKSUM: c852e3889010e9e6f0e6a9ca3641f1173197d975
+PODFILE CHECKSUM: 41f4e60fc082bd688e02945bc140ed9e02521dde
 
 COCOAPODS: 1.5.3

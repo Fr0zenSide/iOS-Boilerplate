@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CocoaLumberjack
 import Firebase
 import KeychainAccess
 
@@ -14,10 +15,20 @@ import KeychainAccess
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // Init the Logger system
+        if let logger = DDOSLogger.sharedInstance {
+            DDLog.add(logger) // TTY = Xcode console
+            logger.logFormatter = CocoaLumberjackCustomFormatter() // init my custom formatter
+            // Init a file loger
+            let fileLogger: DDFileLogger = DDFileLogger() // File Logger
+            fileLogger.rollingFrequency = TimeInterval(60 * 60 * 24)  // 24 hours
+            fileLogger.logFileManager.maximumNumberOfLogFiles = 7
+            DDLog.add(fileLogger)
+        }
         
         // Setup Keychain
         let keychain = Keychain(service: "me.jeoffrey.boilerplate")
