@@ -8,6 +8,8 @@
 
 import UIKit
 import CocoaLumberjack
+import Crashlytics
+import Fabric
 import Firebase
 import KeychainAccess
 
@@ -37,6 +39,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Setup Firebase
         FirebaseApp.configure()
+        
+        // Setup Crashlytics
+        Fabric.sharedSDK().debug = true
+        Fabric.with([Crashlytics.self])
         
         // Setup api Tokens in keychain
         let apptweakToken = ""

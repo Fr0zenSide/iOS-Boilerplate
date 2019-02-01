@@ -7,9 +7,8 @@
 //
 
 import UIKit
+import CocoaLumberjack
 import QuartzCore
-import Fabric
-import Crashlytics
 
 class ViewController: UIViewController {
 
@@ -89,9 +88,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print("World 🎉")
-        Fabric.sharedSDK().debug = true
-        Fabric.with([Crashlytics.self])
+        DDLogDebug("World 🎉")
     }
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
