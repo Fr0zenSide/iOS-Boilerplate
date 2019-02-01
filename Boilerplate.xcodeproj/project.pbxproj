@@ -21,6 +21,7 @@
 		8046BD8B21F64D19009AA8C9 /* CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8046BD8A21F64D19009AA8C9 /* CGFloat.swift */; };
 		8064D14922019B2A00480DCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8064D14522019B2A00480DCF /* Main.storyboard */; };
 		8064D14A22019B2A00480DCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8064D14722019B2A00480DCF /* LaunchScreen.storyboard */; };
+		8064D14C22019C0D00480DCF /* KuzzleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8064D14B22019C0C00480DCF /* KuzzleService.swift */; };
 		807C3B1621FB19470066A8E0 /* AppPreviewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807C3B1521FB19470066A8E0 /* AppPreviewCollectionViewCell.swift */; };
 		807C3B1921FB19550066A8E0 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807C3B1721FB19550066A8E0 /* TodayViewController.swift */; };
 		807C3B1A21FB19550066A8E0 /* DetailTodayAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807C3B1821FB19550066A8E0 /* DetailTodayAppViewController.swift */; };
@@ -80,6 +81,7 @@
 		8046BD8A21F64D19009AA8C9 /* CGFloat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGFloat.swift; sourceTree = "<group>"; };
 		8064D14622019B2A00480DCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Boilerplate/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
 		8064D14822019B2A00480DCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Boilerplate/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
+		8064D14B22019C0C00480DCF /* KuzzleService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KuzzleService.swift; sourceTree = "<group>"; };
 		807C3B1521FB19470066A8E0 /* AppPreviewCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppPreviewCollectionViewCell.swift; sourceTree = "<group>"; };
 		807C3B1721FB19550066A8E0 /* TodayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		807C3B1821FB19550066A8E0 /* DetailTodayAppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTodayAppViewController.swift; sourceTree = "<group>"; };
@@ -249,6 +251,7 @@
 		8046BD7B21F63E23009AA8C9 /* Networks */ = {
 			isa = PBXGroup;
 			children = (
+				8064D14B22019C0C00480DCF /* KuzzleService.swift */,
 				807C3B3621FB25E30066A8E0 /* NetworkEngine.swift */,
 			);
 			path = Networks;
@@ -636,6 +639,7 @@
 				807C3B2F21FB1A020066A8E0 /* SwipeInteractionController.swift in Sources */,
 				8046BD8B21F64D19009AA8C9 /* CGFloat.swift in Sources */,
 				8046BD6F21F5FBA7009AA8C9 /* SecondViewController.swift in Sources */,
+				8064D14C22019C0D00480DCF /* KuzzleService.swift in Sources */,
 				807C3B2021FB197D0066A8E0 /* UIView.swift in Sources */,
 				807C3B3521FB1FAA0066A8E0 /* AbstractModel.swift in Sources */,
 				807C3B2C21FB1A020066A8E0 /* FlipPresentAnimationController.swift in Sources */,
