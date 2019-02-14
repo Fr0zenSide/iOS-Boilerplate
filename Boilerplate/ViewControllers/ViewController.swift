@@ -22,6 +22,7 @@ class ViewController: UIViewController {
     var bottomConstraint: NSLayoutConstraint!
     var heightConstraint: NSLayoutConstraint!
     
+    var tryWebSocket: WebSocketKuzzleConnector!
     
     // MARK: - Getter & Setter methods
     
@@ -117,6 +118,8 @@ class ViewController: UIViewController {
                 DDLogDebug("Rx error: \(error)")
             }
         }
+        
+        tryWebSocket = WebSocketKuzzleConnector()
     }
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation

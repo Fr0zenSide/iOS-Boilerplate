@@ -19,6 +19,12 @@ target 'Boilerplate' do
   # RxFlow is a navigation framework for iOS applications, based on a Reactive Coordinator pattern.
   pod 'RxFlow', '~> 1.6.2'
 
+  # Simple, Extensable, Flexable Validation Checker
+  pod 'RxValidator', '~> 0.0.9'
+
+  # Reactive Keyboard in iOS
+  pod 'RxKeyboard', '~> 0.9.0'
+
   
   ############# About Network #############
   #
@@ -33,6 +39,9 @@ target 'Boilerplate' do
 
   # A lightweight and pure Swift implemented library for downloading and cacheing image from the web.
   pod 'Kingfisher', '~> 4.10.1'
+
+  # Reactive extension for the Kingfisher image downloading and caching library
+  pod 'RxKingfisher', '~> 0.3.1'
 
 
   ############# About Views #############
@@ -52,6 +61,10 @@ target 'Boilerplate' do
   # Used to natively render vector animations exported from After Effects.
   # pod 'lottie-ios', '~> 2.5.2'
 
+  # Theme management based on RxCocoa
+  pod 'RxTheme', '~> 3.2.1'
+
+
   ############# About Tools - Debug - CI #############
   #
   # KeychainAccess is a simple Swift wrapper for Keychain that works on iOS and OS X.
@@ -66,6 +79,7 @@ target 'Boilerplate' do
   # Add temporary frameworks but Firebase would replace them soon
   pod 'Fabric', '~> 1.9.0'
   pod 'Crashlytics', '~> 3.12.0'  
+
 
   target 'BoilerplateTests' do
     inherit! :search_paths

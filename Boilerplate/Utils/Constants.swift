@@ -16,6 +16,7 @@ class Constants {
     // Public variables
     
     static var kuzzleServerUrl = "http://localhost:7512" // ":6379"
+    static var kuzzleWebSocketServerUrl = "ws://localhost:7512"
     // todo: Need to add an external lib to protect this kind of data and to import it from a file ignored by git in gitignore with template
     static var apptweakToken: String {
         let keychain = Keychain(service: "me.jeoffrey.boilerplate")

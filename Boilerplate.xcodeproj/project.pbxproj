@@ -15,6 +15,7 @@
 		801E604F21C3EA0A00935339 /* BoilerplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801E604E21C3EA0A00935339 /* BoilerplateTests.swift */; };
 		801E605A21C3EA0A00935339 /* BoilerplateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801E605921C3EA0A00935339 /* BoilerplateUITests.swift */; };
 		80261A4022016F0700F8E116 /* CocoaLumberjackCustomFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80261A3F22016F0700F8E116 /* CocoaLumberjackCustomFormatter.swift */; };
+		803B01022212CCCC0037397F /* WebSocketKuzzleConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803B01012212CCCC0037397F /* WebSocketKuzzleConnector.swift */; };
 		8046BD6F21F5FBA7009AA8C9 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8046BD6E21F5FBA7009AA8C9 /* SecondViewController.swift */; };
 		8046BD7621F63CA9009AA8C9 /* RoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8046BD7521F63CA9009AA8C9 /* RoomViewController.swift */; };
 		8046BD8921F64CDF009AA8C9 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8046BD8821F64CDF009AA8C9 /* UIColor.swift */; };
@@ -75,6 +76,7 @@
 		801E605921C3EA0A00935339 /* BoilerplateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoilerplateUITests.swift; sourceTree = "<group>"; };
 		801E605B21C3EA0A00935339 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		80261A3F22016F0700F8E116 /* CocoaLumberjackCustomFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CocoaLumberjackCustomFormatter.swift; sourceTree = "<group>"; };
+		803B01012212CCCC0037397F /* WebSocketKuzzleConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketKuzzleConnector.swift; sourceTree = "<group>"; };
 		8046BD6E21F5FBA7009AA8C9 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		8046BD7521F63CA9009AA8C9 /* RoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomViewController.swift; sourceTree = "<group>"; };
 		8046BD8821F64CDF009AA8C9 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
@@ -253,6 +255,7 @@
 			children = (
 				8064D14B22019C0C00480DCF /* KuzzleService.swift */,
 				807C3B3621FB25E30066A8E0 /* NetworkEngine.swift */,
+				803B01012212CCCC0037397F /* WebSocketKuzzleConnector.swift */,
 			);
 			path = Networks;
 			sourceTree = "<group>";
@@ -654,6 +657,7 @@
 				807C3B3321FB1FAA0066A8E0 /* Apps.swift in Sources */,
 				807C3B3421FB1FAA0066A8E0 /* App.swift in Sources */,
 				807C3B1C21FB19680066A8E0 /* Constants.swift in Sources */,
+				803B01022212CCCC0037397F /* WebSocketKuzzleConnector.swift in Sources */,
 				807C3B2E21FB1A020066A8E0 /* ZoomPresentAnimationController.swift in Sources */,
 				807C3B1921FB19550066A8E0 /* TodayViewController.swift in Sources */,
 				8046BD7621F63CA9009AA8C9 /* RoomViewController.swift in Sources */,
