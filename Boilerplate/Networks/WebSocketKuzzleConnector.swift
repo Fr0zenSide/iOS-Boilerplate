@@ -30,7 +30,7 @@ class WebSocketKuzzleConnector {
      */
     public init() {
         
-        socket = WebSocket(url: URL(string: Constants.kuzzleWebSocketServerUrl)!)
+        socket = WebSocket(url: URL(string: Constants.kuzzleWebSocketServerURL)!)
         socket.connect()
         
         socket.rx.response.subscribe(onNext: { (response: WebSocketEvent) in

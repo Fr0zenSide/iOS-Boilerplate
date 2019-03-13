@@ -92,6 +92,25 @@ class ViewController: UIViewController {
         
         DDLogDebug("World 🎉")
         
+        
+        let netManager = NetworkManager()
+        netManager.provider.request(.login(username: "jeoffrey", password: "subzer0")) { (result) in
+            switch result {
+            case let .success(response):
+                // Convert JSON String to Model
+                let JSONString = String(data: response.data, encoding: .utf8)
+                DDLogDebug("data: \(JSONString!)")
+            case let .failure(error):
+                DDLogDebug("Failure request :( \(error.localizedDescription)")
+            }
+        }
+        
+        
+        
+        return;
+        
+        tryWebSocket = WebSocketKuzzleConnector()
+        
         let provider = MoyaProvider<KuzzleService>()
         provider.request(.hello) { (result) in
             var statusCode: Int
@@ -119,7 +138,6 @@ class ViewController: UIViewController {
             }
         }
         
-        tryWebSocket = WebSocketKuzzleConnector()
     }
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation

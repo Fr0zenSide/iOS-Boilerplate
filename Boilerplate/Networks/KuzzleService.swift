@@ -12,15 +12,21 @@ import Moya
 
 enum KuzzleService {
     case hello
+    case login(username: String, password: String)
 }
 
 extension KuzzleService: TargetType {
     
-    var baseURL: URL { return URL(string: Constants.kuzzleServerUrl)! }
+    var baseURL: URL {
+        guard let url = URL(string: Constants.kuzzleServerURL) else { fatalError("baseURL could not be configured.") }
+        return url
+    }
     var path: String {
         switch self {
         case .hello:
             return "/"
+        case .login(_, _):
+            return "/_login/local"
         }
     }
     
@@ -28,20 +34,41 @@ extension KuzzleService: TargetType {
         switch self {
         case .hello:
             return .get
+        case .login(_, _):
+            return .get
         }
     }
     
-    var parameters: [String: Any]? {
+    var parameters: [String: Any] {
         switch self {
 //        case .serverDetails, .content, .listInstallationDevices, .detailRFIDTag(_), .downloadMoyaWebContent, .translations:
 //            return nil
         case .hello:
             return ["pretty": true]
+        case .login(let username, let password):
+            return ["username": username, "password": password]
+//            return ["controller": "auth", "action": "login", "strategy": "local", "body": ["username": username, "password": password]]
+            /*
+            {
+                "controller": "auth",
+                "action": "login",
+                "strategy": "local",
+                "body": {
+                    "username": "<my_username>",
+                    "password": "<my_password>"
+                }
+            }
+            */
         }
     }
     
     var parameterEncoding: ParameterEncoding {
-        return URLEncoding.default
+        switch self {
+        case .hello:
+            return URLEncoding.default
+        default:
+            return JSONEncoding.default
+        }
     }
     
 //    var task: Moya.Task {
@@ -63,6 +90,8 @@ extension KuzzleService: TargetType {
         switch self {
         case .hello: // Send no parameters
             return .requestPlain
+        default:
+            return .requestParameters(parameters: parameters, encoding: parameterEncoding)
 //        case let .updateUser(_, firstName, lastName):  // Always sends parameters in URL, regardless of which HTTP method is used
 //            return .requestParameters(parameters: ["first_name": firstName, "last_name": lastName], encoding: URLEncoding.queryString)
 //        case let .createUser(firstName, lastName): // Always send parameters as JSON in request body
@@ -74,11 +103,22 @@ extension KuzzleService: TargetType {
         switch self {
         case .hello:
             return _getLocalJson(name: "hello")
+        case .login(let username):
+            return _getLocalJson(name: "login-\(username)")
         }
     }
     
     var headers: [String: String]? {
         return ["Content-type": "application/json"]
+    }
+    
+    public func clearCache(provider: MoyaProvider<KuzzleService>, urlRequests: [URLRequest] = []) {
+        guard let urlCache = provider.manager.session.configuration.urlCache else { return }
+        if urlRequests.isEmpty {
+            urlCache.removeAllCachedResponses()
+        } else {
+            urlRequests.forEach { urlCache.removeCachedResponse(for: $0) }
+        }
     }
     
     private func _getLocalJson(name:String!) -> Data! {
@@ -123,4 +163,26 @@ extension KuzzleService: TargetType {
 //        return (temporaryURL, [])
 //    }
     
+}
+
+extension KuzzleService: CachePolicyGettable {
+    var cachePolicy: URLRequest.CachePolicy {
+        switch self {
+        case .hello:
+            return .returnCacheDataElseLoad
+        default:
+            return .useProtocolCachePolicy
+        }
+    }
+}
+
+extension KuzzleService: AccessTokenAuthorizable {
+    var authorizationType: AuthorizationType {
+        switch self {
+        case .hello:
+            return .bearer
+        default:
+            return .none
+        }
+    }
 }

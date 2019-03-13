@@ -41,6 +41,8 @@
 		807C3B3721FB25E30066A8E0 /* NetworkEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807C3B3621FB25E30066A8E0 /* NetworkEngine.swift */; };
 		807C3B3B21FB83500066A8E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 807C3B3821FB83500066A8E0 /* Assets.xcassets */; };
 		807C3B3C21FB83500066A8E0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 807C3B3921FB83500066A8E0 /* GoogleService-Info.plist */; };
+		80A7E9412236BA300008CE06 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A7E9402236BA300008CE06 /* NetworkManager.swift */; };
+		80A7E9432236C4B10008CE06 /* NetworkDataCachingPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A7E9422236C4B10008CE06 /* NetworkDataCachingPlugin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +105,8 @@
 		807C3B3821FB83500066A8E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Boilerplate/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		807C3B3921FB83500066A8E0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Boilerplate/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		807C3B3A21FB83500066A8E0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Boilerplate/Info.plist; sourceTree = SOURCE_ROOT; };
+		80A7E9402236BA300008CE06 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		80A7E9422236C4B10008CE06 /* NetworkDataCachingPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkDataCachingPlugin.swift; sourceTree = "<group>"; };
 		8167EEF059B9B004DCC52E21 /* Pods_BoilerplateUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BoilerplateUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C98D487C0AD5328E73E6B3A8 /* Pods-BoilerplateUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoilerplateUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BoilerplateUITests/Pods-BoilerplateUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CDE9999DDB6327D6914C1EF2 /* Pods-Boilerplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Boilerplate.release.xcconfig"; path = "Pods/Target Support Files/Pods-Boilerplate/Pods-Boilerplate.release.xcconfig"; sourceTree = "<group>"; };
@@ -254,7 +258,9 @@
 			isa = PBXGroup;
 			children = (
 				8064D14B22019C0C00480DCF /* KuzzleService.swift */,
+				80A7E9422236C4B10008CE06 /* NetworkDataCachingPlugin.swift */,
 				807C3B3621FB25E30066A8E0 /* NetworkEngine.swift */,
+				80A7E9402236BA300008CE06 /* NetworkManager.swift */,
 				803B01012212CCCC0037397F /* WebSocketKuzzleConnector.swift */,
 			);
 			path = Networks;
@@ -649,11 +655,13 @@
 				801E603C21C3EA0800935339 /* ViewController.swift in Sources */,
 				807C3B2121FB197D0066A8E0 /* UIImageView.swift in Sources */,
 				801E603A21C3EA0800935339 /* AppDelegate.swift in Sources */,
+				80A7E9432236C4B10008CE06 /* NetworkDataCachingPlugin.swift in Sources */,
 				80261A4022016F0700F8E116 /* CocoaLumberjackCustomFormatter.swift in Sources */,
 				807C3B1A21FB19550066A8E0 /* DetailTodayAppViewController.swift in Sources */,
 				807C3B2221FB197D0066A8E0 /* Serializable.swift in Sources */,
 				807C3B2521FB19CF0066A8E0 /* AnimationHelper.swift in Sources */,
 				807C3B2D21FB1A020066A8E0 /* FlipDismissAnimationController.swift in Sources */,
+				80A7E9412236BA300008CE06 /* NetworkManager.swift in Sources */,
 				807C3B3321FB1FAA0066A8E0 /* Apps.swift in Sources */,
 				807C3B3421FB1FAA0066A8E0 /* App.swift in Sources */,
 				807C3B1C21FB19680066A8E0 /* Constants.swift in Sources */,
